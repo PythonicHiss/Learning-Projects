@@ -1,27 +1,3 @@
-# def factorial_iterative(n):
-#     running_total = 1
-#     for i in range(n+1,1,-1):
-#         running_total *= i
-#     return (running_total)
-# print(factorial_iterative(10))
-
-
-# def Recursion_Factorial1(n):
-#     if n == 1:
-#         return n
-#     else:
-#         temp = Recursion_Factorial1(n - 1)
-#         temp*=n
-#     return temp
-# print(Recursion_Factorial1(5))
-
-
-# START AT 0
-# IF NO CARDS RETURN -1
-# IF CARD DOES  != QUERY AND IS THE LAST ITEM IN THE LIST, RETURN -1
-# IF CARD POSITION == QUERY, RETURN POSITION
-# IF CARD != QUERY, POSITION += 1
-
 def locate_cards(cards, query):
     position = 0
     while position < len(cards):
@@ -34,13 +10,6 @@ def locate_cards(cards, query):
         else:
             position += 1
     return -1
-
-
-
-
-
-
-
 
 tests = []
 
